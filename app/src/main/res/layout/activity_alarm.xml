@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+
+    tools:context="com.example.galvezagb50.ejerciciosdeficheros.AlarmActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txvIntroduceTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Introduce el tiempo (min):"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+        <EditText
+            android:id="@+id/edtMinutos"
+            android:layout_width="42dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="1"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            android:id="@+id/txvIntroduceFrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:text="Introduce la frase asociada:"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+        <EditText
+            android:id="@+id/edtFrase"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnCrearAlarma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Crear Alarma" />
+
+        <Button
+            android:id="@+id/btnIniciarAlarmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Iniciar Alarmas"
+            android:layout_marginTop="5dp"/>
+
+        <Button
+            android:id="@+id/btnBorrarAlarmas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Borrar todas las Alarmas"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txvPropiedadesAlarmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

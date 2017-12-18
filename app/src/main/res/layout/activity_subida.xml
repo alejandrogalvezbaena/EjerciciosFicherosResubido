@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context="com.example.galvezagb50.ejerciciosdeficheros.SubidaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btnSeleccionar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abrir archivo" />
+
+        <EditText
+            android:id="@+id/edtRuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="none"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSubir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Subir" />
+
+    <TextView
+        android:id="@+id/txvInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\n * Solo se permite la subida de JPG, PNG, TXT, HTML,\n    PDF y MP3\n\n * No se subiran archivos mayores a 1 MEGABYTE"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_marginTop="30dp"/>
+</LinearLayout>

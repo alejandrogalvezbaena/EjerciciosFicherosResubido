@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/fondo"
+    tools:context="com.example.galvezagb50.ejerciciosdeficheros.ContactsActivity"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imgName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/nombre" />
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imgNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/numero" />
+
+        <EditText
+            android:id="@+id/edtNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Número de teléfono"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp">
+
+        <ImageView
+            android:id="@+id/imgEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/arroba" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Correo Electronico"
+            android:inputType="textPersonName" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCrearContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Crear Contacto" />
+        <Button
+            android:id="@+id/btnVerContactos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Ver Contactos Creados"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btnBorrarContactos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Borrar todos los contactos"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/txvPropiedades"
+            android:layout_width="356dp"
+            android:layout_height="103dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

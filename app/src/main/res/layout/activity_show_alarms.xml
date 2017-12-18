@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo"
+    android:orientation="vertical"
+    tools:context="com.example.galvezagb50.ejerciciosdeficheros.ShowAlarms">
+
+    <TextView
+        android:id="@+id/txvNumeroAlarma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Alarma:"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txvTiempo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textSize="80sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp">
+
+        <TextView
+            android:id="@+id/txvInfoAlarmas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quedan las siguientes alarmas:"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txvAlarmasRestantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>
